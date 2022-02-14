@@ -1,5 +1,5 @@
 export const home = {
-  title: 'Pozdrav, ja sam full-stack programer iz Hrvatskoj!',
+  title: 'Pozdrav, ja sam full-stack programer iz Hrvatske!',
   subName: 'Digitalni obrtnik (umjetnik / programer / dizajner)',
   work: 'Projekti',
   workText:
