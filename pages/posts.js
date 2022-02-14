@@ -9,15 +9,18 @@ import thumb500PaidUsers from '../public/images/contents/blog-500-paid-users.jpg
 import thumbFinancialGoal from '../public/images/contents/blog-financial-goal.png'
 import thumbHowToPriceYourself from '../public/images/contents/blog-how-to-price-yourself.jpg'
 import thumb50xFaster from '../public/images/contents/youtube-50x-faster.jpg'
+import Lang from '../lib/utils'
 
-const Posts = () => (
-  <Layout title="Posts">
-    <Container>
-      <Heading as="h3" fontSize={20} mb={4}>
-        Popular Posts
-      </Heading>
+const Posts = () => {
+  const t = Lang('blog')
+  return (
+    <Layout title="Posts">
+      <Container>
+        <Heading as="h3" fontSize={20} mb={4}>
+          {t.commingSoon}
+        </Heading>
 
-      <Section delay={0.1}>
+        {/* <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
             title="My Fish workflow"
@@ -60,10 +63,11 @@ const Posts = () => (
             href="https://www.youtube.com/watch?v=vj723NlrIQc"
           />
         </SimpleGrid>
-      </Section>
-    </Container>
-  </Layout>
-)
+      </Section> */}
+      </Container>
+    </Layout>
+  )
+}
 
 export default Posts
 export { getServerSideProps } from '../components/chakra'
