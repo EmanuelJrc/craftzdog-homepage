@@ -5,6 +5,7 @@ export const home = {
   workText:
     'Hello, I am an aspiring full-stack developer learning different programming languages that interest me and seeking to expand my knowledge.',
   bottomPortfolio: 'My portfolio',
+  bio: 'Born in Croatia. Works as a freelance',
   born: 'Born in Granollers, Barcelona.',
   dai: 'Completed CFGS for DAI(Development of Computer Applications)',
   grafix: 'Worked at Grafix Gestio Informatica! Barcelona',

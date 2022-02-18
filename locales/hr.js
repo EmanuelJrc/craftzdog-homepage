@@ -5,6 +5,7 @@ export const home = {
   workText:
     'Ja sam ambiciozni full-stack programer koji uči različite programske jezike koji me zanimaju i nastojim proširiti svoje znanje.',
   bottomPortfolio: 'Moj Portfolio',
+  bio: 'Rođen u Hrvatskoj. Radim kao freelancer',
   born: 'Nací in Granollers, Barcelona.',
   freelance: 'Radim kao freelancer',
   learning: 'Učenje',
