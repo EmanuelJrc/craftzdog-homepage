@@ -18,7 +18,7 @@ const Works = () => {
           <Section>
             <WorkGridItem
               id="fluttertodo"
-              title="Flutter Todo App"
+              title="Todo App (Flutter)"
               thumbnail={thumbTodo}
             >
               {t.textTodo}

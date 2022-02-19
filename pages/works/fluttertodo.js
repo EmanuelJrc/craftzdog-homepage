@@ -22,7 +22,7 @@ const Work = () => {
     <Layout title="fluttertodo">
       <Container>
         <Title>
-          Flutter Todo <Badge>2022 - 2023 </Badge>
+          Todo App (Flutter) <Badge>2022 - 2023 </Badge>
         </Title>
         <P>{t.textTodo}</P>
         <List ml={4} my={4}>

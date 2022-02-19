@@ -28,6 +28,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
   return (
     <NextLink href={href} passHref>
       <Link
+        borderRadius="full"
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}

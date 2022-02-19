@@ -3,7 +3,7 @@ export const home = {
   subName: 'Digital Craftsman ( Artist / Developer / Designer )',
   work: 'Work',
   workText:
-    'Hello, I am an aspiring full-stack developer learning different programming languages that interest me and seeking to expand my knowledge.',
+    'I am self taught developer, also an aspiring full-stack developer learning different programming languages that interest me and seeking to expand my knowledge.',
   bottomPortfolio: 'My portfolio',
   bio: 'Born in Croatia. Works as a freelance',
   born: 'Born in Granollers, Barcelona.',

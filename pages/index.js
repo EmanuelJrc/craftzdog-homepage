@@ -30,6 +30,7 @@ const Home = () => {
       <Container>
         <Box
           borderRadius="lg"
+          mt={6}
           mb={6}
           p={3}
           textAlign="center"
@@ -68,7 +69,7 @@ const Home = () => {
           <Heading as="h3" variant="section-title">
             {t.work}
           </Heading>
-          <Paragraph>...</Paragraph>
+          <Paragraph>{t.workText}</Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
