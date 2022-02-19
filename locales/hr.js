@@ -15,14 +15,19 @@ export const home = {
 }
 
 export const work = {
-  textTodo: 'Aplikacija za pravljenje popisa, zadataka i bilješki u Flutteru.'
+  textTodo: 'Aplikacija za pravljenje popisa, zadataka i bilješki u Flutteru.',
+  work: 'Projekti',
+  titleLearning: 'Projekti za učenje',
+  textWeather: 'Aplikacija koja pokazuje vrijeme koristeči React'
 }
 export const blog = {
   commingSoon: 'Comming Soon'
 }
 
 export const works = {
-  textTodo: 'Aplikacija za pravljenje popisa, zadataka i bilješki u Flutteru.'
+  textTodo: 'Aplikacija za pravljenje popisa, zadataka i bilješki u Flutteru.',
+  textWeather:
+    'Web stvoren iz tutoriala u kojem sam naučio više o Reactu i Javascriptu'
 }
 
 export const navbar = {

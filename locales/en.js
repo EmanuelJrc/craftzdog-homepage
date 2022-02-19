@@ -20,14 +20,20 @@ export const home = {
 }
 
 export const work = {
-  textTodo: 'Flutter todo list and notes taking app.'
+  textTodo: 'Flutter todo list and notes taking app.',
+  work: 'Works',
+  titleLearning: 'Learning projects',
+  textWeather: 'Application to know the weather using react'
 }
+
 export const blog = {
   commingSoon: 'Comming Soon'
 }
 
 export const works = {
-  textTodo: 'Flutter todo list and notes taking app.'
+  textTodo: 'Flutter todo list and notes taking app.',
+  textWeather:
+    'Web created from a tutorial where I learned more about React and Javascript'
 }
 
 export const navbar = {

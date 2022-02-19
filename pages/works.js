@@ -4,6 +4,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbTodo from '../public/images/works/thumb_todo.png'
+import thumbWeather from '../public/images/works/weather2.png'
 
 import Lang from '../lib/utils'
 const Works = () => {
@@ -22,6 +23,26 @@ const Works = () => {
               thumbnail={thumbTodo}
             >
               {t.textTodo}
+            </WorkGridItem>
+          </Section>
+        </SimpleGrid>
+
+        <Section delay={0.4}>
+          <Divider my={6} />
+
+          <Heading as="h3" fontSize={20} mb={4}>
+            {t.titleLearning}
+          </Heading>
+        </Section>
+
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section delay={0.5}>
+            <WorkGridItem
+              id="weatherapp"
+              thumbnail={thumbWeather}
+              title="Weather App"
+            >
+              {t.textWeather}
             </WorkGridItem>
           </Section>
         </SimpleGrid>
