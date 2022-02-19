@@ -14,12 +14,16 @@ export const home = {
   bottonPost: 'Popularne Objave'
 }
 
-export const work = {}
+export const work = {
+  textTodo: 'Aplikacija za pravljenje popisa, zadataka i bilješki u Flutteru.'
+}
 export const blog = {
   commingSoon: 'Comming Soon'
 }
 
-export const works = {}
+export const works = {
+  textTodo: 'Aplikacija za pravljenje popisa, zadataka i bilješki u Flutteru.'
+}
 
 export const navbar = {
   works: 'Projekti',

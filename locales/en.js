@@ -19,12 +19,16 @@ export const home = {
   present: 'to present'
 }
 
-export const work = {}
+export const work = {
+  textTodo: 'Flutter todo list and notes taking app.'
+}
 export const blog = {
   commingSoon: 'Comming Soon'
 }
 
-export const works = {}
+export const works = {
+  textTodo: 'Flutter todo list and notes taking app.'
+}
 
 export const navbar = {
   works: 'Works',
