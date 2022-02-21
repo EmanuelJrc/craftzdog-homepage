@@ -134,7 +134,7 @@ const Home = () => {
           </List>
 
           <Box align="center" my={4}>
-            <NextLink href="/posts">
+            <NextLink href="/blog">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 {t.bottonPost}
               </Button>

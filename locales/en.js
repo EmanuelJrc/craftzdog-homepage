@@ -27,7 +27,7 @@ export const work = {
 }
 
 export const blog = {
-  commingSoon: 'Comming Soon'
+  commingSoon: 'Welcome to my blog'
 }
 
 export const works = {
@@ -38,7 +38,7 @@ export const works = {
 
 export const navbar = {
   works: 'Works',
-  posts: 'Posts',
+  blog: 'Blog',
   source: 'View Source',
   about: 'About',
   select: 'Select'

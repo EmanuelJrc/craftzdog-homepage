@@ -21,7 +21,7 @@ export const work = {
   textWeather: 'Aplikacija koja pokazuje vrijeme koristeči React'
 }
 export const blog = {
-  commingSoon: 'Comming Soon'
+  commingSoon: 'Dobrodošli u moj blog'
 }
 
 export const works = {
@@ -32,7 +32,7 @@ export const works = {
 
 export const navbar = {
   works: 'Projekti',
-  posts: 'Objave',
+  blog: 'Blog',
   source: 'Izvor',
   about: 'O Meni',
   select: 'Odaberi'

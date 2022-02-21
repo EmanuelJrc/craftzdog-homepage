@@ -25,7 +25,7 @@ const Logo = () => {
   const gameImg = `/images/game${useColorModeValue('', '-dark')}.png`
 
   return (
-    <Link href="/">
+    <Link href="/" scroll={false}>
       <a>
         <LogoBox>
           <Image src={gameImg} width={20} height={20} alt="logo" />

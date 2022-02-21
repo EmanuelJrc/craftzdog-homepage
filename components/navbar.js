@@ -22,17 +22,17 @@ import { IoLogoGithub } from 'react-icons/io5'
 import * as en from '../locales/en'
 import * as hr from '../locales/hr'
 
-const LinkItem = ({ href, path, _target, children, ...props }) => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
-    <NextLink href={href} passHref>
+    <NextLink href={href} passHref scroll={false}>
       <Link
         borderRadius="full"
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
-        _target={_target}
+        target={target}
         {...props}
       >
         {children}
@@ -88,11 +88,11 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             {t.works}
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            {t.posts}
+          <LinkItem href="/blog" path={path}>
+            {t.blog}
           </LinkItem>
           <LinkItem
-            _target="_blank"
+            target="_blank"
             href="https://github.com/craftzdog/craftzdog-homepage"
             path={path}
             display="inline-flex"
@@ -145,8 +145,8 @@ const Navbar = props => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>{t.works}</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>{t.posts}</MenuItem>
+                <NextLink href="/blog" passHref>
+                  <MenuItem as={Link}>{t.blog}</MenuItem>
                 </NextLink>
                 <MenuItem
                   as={Link}
