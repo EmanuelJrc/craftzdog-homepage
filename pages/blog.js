@@ -6,6 +6,7 @@ import { GridItem } from '../components/grid-item'
 import Lang from '../lib/utils'
 import thumbRollercoin from '../public/images/contents/roller.jpg'
 import thumbHoney from '../public/images/contents/honey.jpeg'
+import thumbFaucet from '../public/images/contents/thumnail-faucets.png'
 
 const Blog = () => {
   const t = Lang('blog')
@@ -31,28 +32,31 @@ const Blog = () => {
           </SimpleGrid>
         </Section>
 
-        {/* <Section delay={0.3}>
+        <Section delay={0.3}>
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <GridItem
-              title="How I’ve Attracted The First 500 Paid Users For My SaaS That Costs $5/mo"
-              href="https://blog.inkdrop.app/how-ive-attracted-the-first-500-paid-users-for-my-saas-that-costs-5-mo-7a5b94b8e820"
+              title="Crypto Faucets - About Them And The Best Ones I Use"
+              thumbnail={thumbFaucet}
+              href="https://read.cash/@emanuel_jrc/crypto-faucets-about-them-and-the-best-ones-i-use-60bf7209"
             />
-            <GridItem
+            {/* <GridItem
               title="I stopped setting a financial goal for my SaaS"
+              thumbnail={thumbHoney}
               href="https://blog.inkdrop.app/i-stopped-setting-a-financial-goal-for-my-saas-a92c3db65506"
-            />
+            /> */}
           </SimpleGrid>
         </Section>
 
-        <Section delay={0.5}>
+        {/* <Section delay={0.5}>
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
             <GridItem
               title="How to Price Yourself as a Freelance Developer"
+              thumbnail={thumbHoney}
               href="https://blog.inkdrop.app/how-to-price-yourself-as-a-freelance-developer-3453dfd59d91"
             />
             <GridItem
               title="I made my React Native app 50x faster"
-              // thumbnail={thumb50xFaster}
+              thumbnail={thumbHoney}
               href="https://www.youtube.com/watch?v=vj723NlrIQc"
             />
           </SimpleGrid>
