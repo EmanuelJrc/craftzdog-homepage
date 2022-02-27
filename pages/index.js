@@ -19,7 +19,12 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import {
+  IoLogoTwitter,
+  IoLogoInstagram,
+  IoLogoGithub,
+  IoLogoBitcoin
+} from 'react-icons/io5'
 import Lang from '../lib/utils'
 import React from 'react'
 
@@ -128,6 +133,17 @@ const Home = () => {
                   leftIcon={<Icon as={IoLogoInstagram} />}
                 >
                   @emanuel_jrc
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://linktr.ee/nobel322" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoBitcoin} />}
+                >
+                  Linktree
                 </Button>
               </Link>
             </ListItem>
