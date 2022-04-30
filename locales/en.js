@@ -1,7 +1,7 @@
 export const home = {
   title: 'Hello, I am a full-stack developer based in Croatia!',
   subName: 'Digital Craftsman ( Artist / Developer / Designer )',
-  work: 'Projects',
+  work: 'Work',
   workText:
     'I am self taught developer, also an aspiring full-stack developer learning different programming languages that interest me and seeking to expand my knowledge.',
   bottomPortfolio: 'My portfolio',
@@ -21,7 +21,7 @@ export const home = {
 
 export const work = {
   textTodo: 'Flutter todo list and notes taking app.',
-  work: 'Projects',
+  work: 'Works',
   titleLearning: 'Learning projects',
   textWeather: 'Application to know the weather using react'
 }
@@ -37,7 +37,7 @@ export const works = {
 }
 
 export const navbar = {
-  works: 'Projects',
+  works: 'Works',
   blog: 'Blog',
   source: 'View Source',
   about: 'About',

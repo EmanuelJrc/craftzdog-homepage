@@ -1,14 +1,14 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
+import { GridItem } from '../components/grid-item'
 
 import Lang from '../lib/utils'
 import thumbRollercoin from '../public/images/contents/roller.jpg'
 import thumbHoney from '../public/images/contents/honey.jpeg'
 import thumbFaucet from '../public/images/contents/thumnail-faucets.png'
 
-const Blogs = () => {
+const Blog = () => {
   const t = Lang('blog')
   return (
     <Layout title="Blog">
@@ -17,24 +17,27 @@ const Blogs = () => {
           {t.commingSoon}
         </Heading>
 
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
-          <Section delay={0.5}>
-            <WorkGridItem
-              id="honeygain"
+        <Section delay={0.1}>
+          <SimpleGrid columns={[1, 2, 2]} gap={6}>
+            <GridItem
+              title="Rollercoin - Crypto Mining Simulator Game That Pays!!"
+              thumbnail={thumbRollercoin}
+              href="https://read.cash/@emanuel_jrc/rollercoin-crypto-mining-simulator-game-that-pays-787981bd"
+            />
+            <GridItem
+              title="Honeygain, earn money passively"
               thumbnail={thumbHoney}
-              title="Honeygain"
-            >
-              {t.textWeather}
-            </WorkGridItem>
-          </Section>
-        </SimpleGrid>
+              href="https://read.cash/@emanuel_jrc/honeygain-earn-money-passively-4ad59a28"
+            />
+          </SimpleGrid>
+        </Section>
 
         <Section delay={0.3}>
           <SimpleGrid columns={[1, 2, 2]} gap={6}>
-            <WorkGridItem
+            <GridItem
               title="Crypto Faucets - About Them And The Best Ones I Use"
               thumbnail={thumbFaucet}
-              href="https://read.cash/@emanuel_jrc/crypto-faucets-aout-them-and-the-best-ones-i-use-60bf7209"
+              href="https://read.cash/@emanuel_jrc/crypto-faucets-about-them-and-the-best-ones-i-use-60bf7209"
             />
             {/* <GridItem
               title="I stopped setting a financial goal for my SaaS"
@@ -63,5 +66,5 @@ const Blogs = () => {
   )
 }
 
-export default Blogs
+export default Blog
 export { getServerSideProps } from '../components/chakra'
