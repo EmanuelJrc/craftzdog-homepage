@@ -7,23 +7,9 @@ module.exports = {
     locales: ['en', 'hr'],
     // This is the default locale you want to be used when visiting
     // a non-locale prefixed path e.g. `/hello`
-    defaultLocale: 'en',
+    defaultLocale: 'en'
     // This is a list of locale domains and the default locale they
     // should handle (these are only required when setting up domain routing)
     // Note: subdomains must be included in the domain value to be matched e.g. "fr.example.com".
-    async rewrites() {
-      return [
-        {
-          source: '/hr/works',
-          destination: '/hr/angel',
-          locale: false // Use `locale: false` so that the prefix matches the desired locale correctly
-        },
-        {
-          source: '/en/pony',
-          destination: '/en/posts',
-          locale: false
-        }
-      ]
-    }
   }
 }

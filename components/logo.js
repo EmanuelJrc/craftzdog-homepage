@@ -26,19 +26,17 @@ const Logo = () => {
 
   return (
     <Link href="/" scroll={false}>
-      <a>
-        <LogoBox>
-          <Image src={gameImg} width={20} height={20} alt="logo" />
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily='M PLUS Rounded 1c", sans-serif'
-            fontWeight="bold"
-            mx={5}
-          >
-            Emanuel Juricev
-          </Text>
-        </LogoBox>
-      </a>
+      <LogoBox>
+        <Image src={gameImg} width={20} height={20} alt="logo" />
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily='M PLUS Rounded 1c", sans-serif'
+          fontWeight="bold"
+          mx={5}
+        >
+          Emanuel Juricev
+        </Text>
+      </LogoBox>
     </Link>
   )
 }

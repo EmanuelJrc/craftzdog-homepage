@@ -1,3 +1,4 @@
+import { forwardRef } from 'react'
 import Logo from './logo'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
@@ -26,20 +27,25 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
-    <NextLink href={href} passHref scroll={false}>
-      <Link
-        borderRadius="full"
-        p={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
-        target={target}
-        {...props}
-      >
-        {children}
-      </Link>
-    </NextLink>
+    <Link
+      as={NextLink}
+      href={href}
+      scroll={false}
+      borderRadius="full"
+      p={2}
+      bg={active ? 'grassTeal' : undefined}
+      color={active ? '#202023' : inactiveColor}
+      target={target}
+      {...props}
+    >
+      {children}
+    </Link>
   )
 }
+
+const MenuLink = forwardRef((props, ref) => (
+  <Link ref={ref} as={NextLink} {...props} />
+))
 
 const Navbar = props => {
   const { path } = props
@@ -60,7 +66,7 @@ const Navbar = props => {
       w="100%"
       bg={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
-      zIndex={1}
+      zIndex={2}
       {...props}
     >
       <Container
@@ -139,15 +145,15 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>{t.about}</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>{t.works}</MenuItem>
-                </NextLink>
-                <NextLink href="/blogs" passHref>
-                  <MenuItem as={Link}>{t.blogs}</MenuItem>
-                </NextLink>
+                <MenuItem as={MenuLink} href="/">
+                  {t.about}
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/works">
+                  {t.works}
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/blogs">
+                  {t.blogs}
+                </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://github.com/craftzdog/craftzdog-homepage"
