@@ -104,13 +104,13 @@ const Home = () => {
           </Heading>
           <List>
             <ListItem>
-              <Link href="https://github.com/Nobel322" target="_blank">
+              <Link href="https://github.com/EmanuelJrc" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<Icon as={IoLogoGithub} />}
                 >
-                  @nobel322
+                  @EmanuelJrc
                 </Button>
               </Link>
             </ListItem>
@@ -150,7 +150,7 @@ const Home = () => {
           </List>
 
           <Box align="center" my={4}>
-            <NextLink href="/blog">
+            <NextLink href="/blogs">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 {t.bottonPost}
               </Button>

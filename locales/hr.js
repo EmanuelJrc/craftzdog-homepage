@@ -20,8 +20,8 @@ export const work = {
   titleLearning: 'Projekti za učenje',
   textWeather: 'Aplikacija koja pokazuje vrijeme koristeči React'
 }
-export const blog = {
-  commingSoon: 'Dobrodošli u moj blog'
+export const blogs = {
+  commingSoon: 'Dobrodošli u moje blogove'
 }
 
 export const works = {
@@ -32,7 +32,7 @@ export const works = {
 
 export const navbar = {
   works: 'Projekti',
-  blog: 'Blog',
+  blogs: 'Blogovi',
   source: 'Izvor',
   about: 'O Meni',
   select: 'Odaberi'

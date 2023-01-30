@@ -20,8 +20,8 @@ export const work = {
   textWeather: 'Application to know the weather using react'
 }
 
-export const blog = {
-  commingSoon: 'Welcome to my blog'
+export const blogs = {
+  commingSoon: 'Welcome to my blogs'
 }
 
 export const works = {
@@ -32,7 +32,7 @@ export const works = {
 
 export const navbar = {
   works: 'Works',
-  blog: 'Blog',
+  blogs: 'Blogs',
   source: 'View Source',
   about: 'About',
   select: 'Select'
