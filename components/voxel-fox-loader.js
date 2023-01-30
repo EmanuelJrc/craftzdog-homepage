@@ -19,7 +19,6 @@ export const FoxContainer = forwardRef(({ children }, ref) => (
     m="auto"
     mt={['-20px', '-60px', '-120px']}
     mb={['-40px', '-140px', '-100px']}
-    mr="138px"
     w={[280, 480, 540]}
     h={[280, 480, 540]}
     position="relative"
