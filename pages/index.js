@@ -24,7 +24,8 @@ import {
   IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
-  IoLogoBitcoin
+  IoLogoBitcoin,
+  IoLogoLinkedin
 } from 'react-icons/io5'
 import Lang from '../lib/utils'
 import React from 'react'
@@ -106,7 +107,15 @@ const Home = () => {
           <Heading as="h3" variant="section-title">
             Bio
           </Heading>
-          <BioSection>{t.bio}</BioSection>
+          <Paragraph>
+            From the moment I produced "Hello World" in the console of my first
+            application, I knew I was hooked into the world of software
+            development. But software development has never been "just a job"
+            for me, it's offered an engaging challenge to continually learn and
+            improve my skills in creating high-quality software. What started
+            with a simple "Hello World" has become a full-fledged passion that
+            only gets more exciting as the years go by.
+          </Paragraph>
         </Section>
 
         <Section delay={0.3}>
@@ -155,13 +164,16 @@ const Home = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://linktr.ee/nobel322" target="_blank">
+              <Link
+                href="https://www.linkedin.com/in/emanueljrc/"
+                target="_blank"
+              >
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoBitcoin} />}
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
                 >
-                  Linktree
+                  @emanueljrc
                 </Button>
               </Link>
             </ListItem>
