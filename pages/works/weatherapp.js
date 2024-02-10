@@ -1,30 +1,20 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  SimpleGrid,
-  UnorderedList,
-  Heading,
-  Center,
-  Image
-} from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem } from '@chakra-ui/react'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
-import Lang from '../../lib/utils'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Work = () => {
-  const t = Lang('works')
   return (
     <Layout title="weatherapp">
       <Container>
         <Title>
           Weather App <Badge>2021 </Badge>
         </Title>
-        <P>{t.textWeather}</P>
+        <P>
+          Weather App created from a tutorial where I learned more about React
+          and Javascript
+        </P>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Platform</Meta>

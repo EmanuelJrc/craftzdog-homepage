@@ -1,7 +1,6 @@
 import { forwardRef } from 'react'
 import Logo from './logo'
 import NextLink from 'next/link'
-import { useRouter } from 'next/router'
 import {
   Container,
   Box,
@@ -14,14 +13,11 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue,
-  Select
+  useColorModeValue
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
-import * as en from '../locales/en'
-import * as hr from '../locales/hr'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -49,15 +45,6 @@ const MenuLink = forwardRef((props, ref) => (
 
 const Navbar = props => {
   const { path } = props
-  const router = useRouter()
-  const { locale } = router
-  const tAux = locale === 'en' ? en : hr
-  const t = tAux.navbar
-
-  const changeLanguage = e => {
-    const locale = e.target.value
-    router.push(router.pathname, router.asPath, { locale })
-  }
 
   return (
     <Box
@@ -92,10 +79,10 @@ const Navbar = props => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            {t.works}
+            Works
           </LinkItem>
-          <LinkItem href="/blogs" path={path}>
-            {t.blogs}
+          <LinkItem href="/posts" path={path}>
+            Posts
           </LinkItem>
           <LinkItem
             target="_blank"
@@ -107,33 +94,11 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
-            {t.source}
+            View Source
           </LinkItem>
         </Stack>
 
-        <Box
-          flex={1}
-          align="right"
-          direction={{ base: 'column', md: 'row' }}
-          width={{ base: 'full', md: 'auto' }}
-          alignItems="center"
-          flexGrow={1}
-        >
-          <Select
-            display={{ base: 'none', md: 'inline-block' }}
-            w={[75, 75, 75]}
-            mx={2}
-            placeholder={t.select}
-            onChange={changeLanguage}
-            defaultValue={locale}
-          >
-            <option className="text-black" value="en">
-              EN
-            </option>
-            <option className="text-black" value="hr">
-              HR
-            </option>
-          </Select>
+        <Box flex={1} align="right">
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -146,33 +111,20 @@ const Navbar = props => {
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
-                  {t.about}
+                  About
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
-                  {t.works}
+                  Works
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/blogs">
-                  {t.blogs}
+                <MenuItem as={MenuLink} href="/posts">
+                  Posts
                 </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://github.com/craftzdog/craftzdog-homepage"
                 >
-                  {t.source}
+                  View Source
                 </MenuItem>
-                <Select
-                  placeholder={t.select}
-                  onChange={changeLanguage}
-                  defaultValue={locale}
-                  className="text-white text-shadow-sm text-lg bg-transparent tracking-wide"
-                >
-                  <option className="text-black" value="en">
-                    EN
-                  </option>
-                  <option className="text-black" value="hr">
-                    HR
-                  </option>
-                </Select>
               </MenuList>
             </Menu>
           </Box>

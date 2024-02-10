@@ -5,24 +5,34 @@ import { WorkGridItem } from '../components/grid-item'
 
 import thumbTodo from '../public/images/works/thumb_todo.png'
 import thumbWeather from '../public/images/works/weather2.png'
+import thumbSpoti from '../public/images/works/spoti.png'
 
-import Lang from '../lib/utils'
 const Works = () => {
-  const t = Lang('work')
   return (
     <Layout title="Works">
       <Container>
         <Heading as="h3" fontSize={20} mb={4}>
-          {t.work}
+          Works
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          {/* Flutter todo app */}
           <Section>
             <WorkGridItem
               id="fluttertodo"
               title="Todo App (Flutter)"
               thumbnail={thumbTodo}
             >
-              {t.textTodo}
+              Flutter todo list and notes taking app.
+            </WorkGridItem>
+          </Section>
+          {/* Weather app */}
+          <Section>
+            <WorkGridItem
+              id="spotify"
+              title="Spotify Recommendation"
+              thumbnail={thumbSpoti}
+            >
+              Spotify track recommendation program written in Python.
             </WorkGridItem>
           </Section>
         </SimpleGrid>
@@ -31,10 +41,11 @@ const Works = () => {
           <Divider my={6} />
 
           <Heading as="h3" fontSize={20} mb={4}>
-            {t.titleLearning}
+            Learning projects
           </Heading>
         </Section>
 
+        {/* Weather app */}
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section delay={0.5}>
             <WorkGridItem
@@ -42,7 +53,7 @@ const Works = () => {
               thumbnail={thumbWeather}
               title="Weather App"
             >
-              {t.textWeather}
+              App that lets you know the weather of your location.
             </WorkGridItem>
           </Section>
         </SimpleGrid>

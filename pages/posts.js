@@ -1,30 +1,24 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { BlogGridItem } from '../components/grid-item'
 import { GridItem } from '../components/grid-item'
-import Lang from '../lib/utils'
+
 import thumbTest from '../public/images/blogs/test-image.jpg'
 
-const Blogs = () => {
-  const t = Lang('blogs')
+const Posts = () => {
   return (
-    <Layout title="Blogs">
+    <Layout title="Posts">
       <Container>
         <Heading as="h3" fontSize={42} mb={4}>
-          {t.commingSoon}
+          Welcome to my blogs
         </Heading>
 
         <Section delay={0.3}>
           <SimpleGrid columns={[1, 1, 2]} gap={6}>
             <Section>
-              <BlogGridItem
-                id="testblog"
-                title="Test Blog"
-                thumbnail={thumbTest}
-              >
-                {t.textTodo}
-              </BlogGridItem>
+              <GridItem title="Test Blog" thumbnail={thumbTest}>
+                Flutter todo list and notes taking app.
+              </GridItem>
             </Section>
           </SimpleGrid>
         </Section>
@@ -48,5 +42,5 @@ const Blogs = () => {
   )
 }
 
-export default Blogs
+export default Posts
 export { getServerSideProps } from '../components/chakra'

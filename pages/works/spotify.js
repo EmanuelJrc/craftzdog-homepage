@@ -6,31 +6,34 @@ import Layout from '../../components/layouts/article'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
 const Work = () => (
-  <Layout title="fluttertodo">
+  <Layout title="spotify_recommends">
     <Container>
       <Title>
-        Todo App (Flutter) <Badge>2022 - 2023 </Badge>
+        Spotify Recommendation <Badge> 2024 </Badge>
       </Title>
-      <P>Flutter todo list and notes taking app.</P>
+      <P>
+        Spotify track recommendation program written in Python. Can recommend
+        tracks based on the one you are currently listening to.
+      </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>Android, IOS</span>
+          <span>PC</span>
         </ListItem>
 
         <ListItem>
           <Meta>Stack</Meta>
-          <span>Flutter</span>
+          <span>Python</span>
         </ListItem>
 
         <Meta>Presentation</Meta>
-        <Link href="https://github.com/Nobel322/getx_todo_list/">
+        <Link href="https://github.com/EmanuelJrc/Spotify-recommendation">
           Github <ExternalLinkIcon mx="2px" />
         </Link>
       </List>
 
-      <WorkImage src="/images/works/todo1.png"></WorkImage>
-      <WorkImage src="/images/works/todo2.png"></WorkImage>
+      <WorkImage src="/images/works/spoti2.png"></WorkImage>
+      <WorkImage src="/images/works/spoti3.png"></WorkImage>
       {/*
       <AspectRatio maxW="640px" ratio={1.7} my={4}>
         <iframe

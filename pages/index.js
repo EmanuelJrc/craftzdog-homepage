@@ -4,38 +4,24 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
   Button,
   List,
   ListItem,
-  Icon,
-  useColorModeValue,
-  chakra
+  useColorModeValue
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import Image from 'next/image'
-
 import {
   IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
-  IoLogoBitcoin,
   IoLogoLinkedin
 } from 'react-icons/io5'
-import Lang from '../lib/utils'
-import React from 'react'
-
-const ProfileImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-})
+import Image from 'next/image'
 
 const Home = () => {
-  const t = Lang('home')
   return (
     <Layout>
       <Container>
@@ -48,7 +34,7 @@ const Home = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           css={{ backdropFilter: 'blur(10px)' }}
         >
-          {t.title}
+          Hello, I am a full-stack developer based in Croatia!
         </Box>
 
         <Box display={{ md: 'flex' }}>
@@ -56,7 +42,7 @@ const Home = () => {
             <Heading as="h2" variant="page-title">
               Emanuel Juricev
             </Heading>
-            <p>{t.subName}</p>
+            <p>Digital Craftsman ( Artist / Developer / Designer )</p>
           </Box>
           <Box
             flexShrink={0}
@@ -74,10 +60,9 @@ const Home = () => {
               borderRadius="full"
               overflow="hidden"
             >
-              <ProfileImage
+              <Image
                 src="/images/emanuel.jpg"
                 alt="Profile image"
-                borderRadius="full"
                 width="100"
                 height="100"
               />
@@ -87,9 +72,13 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            {t.work}
+            Work
           </Heading>
-          <Paragraph>{t.workText}</Paragraph>
+          <Paragraph>
+            I am self taught developer, also an aspiring full-stack developer
+            learning different programming languages that interest me and
+            seeking to expand my knowledge.
+          </Paragraph>
           <Box align="center" my={4}>
             <Button
               as={NextLink}
@@ -98,7 +87,7 @@ const Home = () => {
               rightIcon={<ChevronRightIcon />}
               colorScheme="teal"
             >
-              {t.bottomPortfolio}
+              My portfolio
             </Button>
           </Box>
         </Section>
@@ -108,13 +97,14 @@ const Home = () => {
             Bio
           </Heading>
           <Paragraph>
-            From the moment I produced "Hello World" in the console of my first
-            application, I knew I was hooked into the world of software
-            development. But software development has never been "just a job"
-            for me, it's offered an engaging challenge to continually learn and
-            improve my skills in creating high-quality software. What started
-            with a simple "Hello World" has become a full-fledged passion that
-            only gets more exciting as the years go by.
+            From the moment I produced &quot;Hello World&quot; in the console of
+            my first application, I knew I was hooked into the world of software
+            development. But software development has never been &quot;just a
+            job&quot; for me, it&apos;s offered an engaging challenge to
+            continually learn and improve my skills in creating high-quality
+            software. What started with a simple &quot;Hello World&quot; has
+            become a full-fledged passion that only gets more exciting as the
+            years go by.
           </Paragraph>
         </Section>
 
@@ -122,12 +112,14 @@ const Home = () => {
           <Heading as="h3" variant="section-title">
             I ♥
           </Heading>
-          <Paragraph>{t.like}</Paragraph>
+          <Paragraph>
+            Art, Music, Drawing, Playing Guitar, Photography
+          </Paragraph>
         </Section>
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            {t.ssnn}
+            On the web
           </Heading>
           <List>
             <ListItem>
@@ -135,7 +127,7 @@ const Home = () => {
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoGithub} />}
+                  leftIcon={<IoLogoGithub />}
                 >
                   @EmanuelJrc
                 </Button>
@@ -146,7 +138,7 @@ const Home = () => {
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoTwitter} />}
+                  leftIcon={<IoLogoTwitter />}
                 >
                   @emanuel__jrc
                 </Button>
@@ -157,7 +149,7 @@ const Home = () => {
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoInstagram} />}
+                  leftIcon={<IoLogoInstagram />}
                 >
                   @emanuel_jrc
                 </Button>
@@ -171,7 +163,7 @@ const Home = () => {
                 <Button
                   variant="ghost"
                   colorScheme="teal"
-                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                  leftIcon={<IoLogoLinkedin />}
                 >
                   @emanueljrc
                 </Button>
@@ -182,12 +174,12 @@ const Home = () => {
           <Box align="center" my={4}>
             <Button
               as={NextLink}
-              href="/blogs"
+              href="/posts"
               scroll={false}
               rightIcon={<ChevronRightIcon />}
               colorScheme="teal"
             >
-              {t.bottonPost}
+              Popular posts
             </Button>
           </Box>
         </Section>
