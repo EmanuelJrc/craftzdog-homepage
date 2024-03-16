@@ -23,9 +23,9 @@ const Work = () => (
           <span>Flutter</span>
         </ListItem>
 
-        <Meta>Presentation</Meta>
-        <Link href="https://github.com/Nobel322/getx_todo_list/">
-          Github <ExternalLinkIcon mx="2px" />
+        <Meta>Source</Meta>
+        <Link href="https://github.com/EmanuelJrc/getx_todo_list/">
+          github.com/EmanuelJrc/getx_todo_list/ <ExternalLinkIcon mx="2px" />
         </Link>
       </List>
 

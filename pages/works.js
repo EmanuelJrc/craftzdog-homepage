@@ -6,6 +6,7 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbTodo from '../public/images/works/thumb_todo.png'
 import thumbWeather from '../public/images/works/weather2.png'
 import thumbSpoti from '../public/images/works/spoti.png'
+import thumbCourse from '../public/images/works/course.png'
 
 const Works = () => {
   return (
@@ -25,7 +26,7 @@ const Works = () => {
               Flutter todo list and notes taking app.
             </WorkGridItem>
           </Section>
-          {/* Weather app */}
+          {/* Spotify recommendation */}
           <Section>
             <WorkGridItem
               id="spotify"
@@ -33,6 +34,17 @@ const Works = () => {
               thumbnail={thumbSpoti}
             >
               Spotify track recommendation program written in Python.
+            </WorkGridItem>
+          </Section>
+          {/* Course website */}
+          <Section>
+            <WorkGridItem
+              id="coursewebsite"
+              title="Course Website"
+              thumbnail={thumbCourse}
+            >
+              Learn web development website made using HTML, CSS, and
+              Javascript.
             </WorkGridItem>
           </Section>
         </SimpleGrid>

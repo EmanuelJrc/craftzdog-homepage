@@ -134,13 +134,13 @@ const Home = () => {
               </Link>
             </ListItem>
             <ListItem>
-              <Link href="https://twitter.com/emanuel__jrc" target="_blank">
+              <Link href="https://twitter.com/emanueljuricev" target="_blank">
                 <Button
                   variant="ghost"
                   colorScheme="teal"
                   leftIcon={<IoLogoTwitter />}
                 >
-                  @emanuel__jrc
+                  @emanueljuricev
                 </Button>
               </Link>
             </ListItem>

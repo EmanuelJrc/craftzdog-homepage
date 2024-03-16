@@ -26,9 +26,10 @@ const Work = () => {
             <span>Javascript, Reactjs</span>
           </ListItem>
 
-          <Meta>Presentation</Meta>
-          <Link href="https://github.com/Nobel322/WeatherApp/">
-            Github <ExternalLinkIcon mx="2px" />
+          <Meta>Source</Meta>
+          <Link href="https://github.com/EmanuelJrc/WeatherApp/">
+            https://github.com/EmanuelJrc/WeatherApp/{' '}
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </List>
 
